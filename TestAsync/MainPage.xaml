@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="TestAsync.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestAsync"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Right" Click="Button_Click">Start Async</Button>
+        <TextBlock VerticalAlignment="Center">
+            <Run>Counter: </Run>
+            <Run x:Name="counter"></Run>
+        </TextBlock>
+        <StackPanel Grid.Row="1">
+            <Slider ></Slider>
+            <Button>Test Button</Button>
+        </StackPanel>
+    </Grid>
+</Page>
